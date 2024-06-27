@@ -47,9 +47,9 @@ The primary objective of this project is to deploy a scalable, highly available,
 
    - Install [CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html):
       **STEPS*
-      
-            ```wget https://amazoncloudwatch-agent.s3.amazonaws.com/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb```
 
+            ```wget https://amazoncloudwatch-agent.s3.amazonaws.com/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb```
+            ```sudo dpkg -i -E ./amazon-cloudwatch-agent.deb```
 
 
    - Install [AWS Systems Manager (SSM) Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html).
