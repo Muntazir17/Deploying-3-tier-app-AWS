@@ -35,8 +35,8 @@ The primary objective of this project is to deploy a scalable, highly available,
 ## Pre-Deployment Steps
 
 1. **Create Global AMI (Amazon Machine Image)**:
-   - Install [AWS CLI](https://aws.amazon.com/cli/).
-      **STEPS*
+   - Install [AWS CLI](https://aws.amazon.com/cli/):
+      - **STEPS*
       
             ```sudo apt-get update -y && sudo apt-get upgrade -y```
             ``` curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" ```
@@ -45,11 +45,12 @@ The primary objective of this project is to deploy a scalable, highly available,
             ``` aws --version ```
 
 
-   - Install [CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html).
+   - Install [CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html):
       **STEPS*
+      
             ```wget https://amazoncloudwatch-agent.s3.amazonaws.com/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb```
 
-            
+
 
    - Install [AWS Systems Manager (SSM) Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html).
 
