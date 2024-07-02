@@ -36,21 +36,23 @@ The primary objective of this project is to deploy a scalable, highly available,
 
 1. **Create Global AMI (Amazon Machine Image)**:
    - Install [AWS CLI](https://aws.amazon.com/cli/):
-      - **STEPS*
+      - **STEPS**
       
-            ```sudo apt-get update -y && sudo apt-get upgrade -y```
-            ``` curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" ```
-            ``` unzip awscliv2.zip ```
-            ``` sudo ./aws/install ```
-            ``` aws --version ```
-
+        ```bash
+        sudo apt-get update -y && sudo apt-get upgrade -y
+        curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+        unzip awscliv2.zip
+        sudo ./aws/install
+        aws --version
+        ```
 
    - Install [CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html):
-      **STEPS*
+      - **STEPS**
 
-            ```wget https://amazoncloudwatch-agent.s3.amazonaws.com/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb```
-            ```sudo dpkg -i -E ./amazon-cloudwatch-agent.deb```
-
+        ```bash
+        wget https://amazoncloudwatch-agent.s3.amazonaws.com/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb
+        sudo dpkg -i -E ./amazon-cloudwatch-agent.deb
+        ```
 
    - Install [AWS Systems Manager (SSM) Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html).
 
@@ -68,6 +70,7 @@ The primary objective of this project is to deploy a scalable, highly available,
      - Install [Git](https://git-scm.com/).
      - Install [JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
      - Update the Maven Home in the system PATH environment variable.
+
 
 ## VPC Deployment
 
