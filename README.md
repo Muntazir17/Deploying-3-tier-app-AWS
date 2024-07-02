@@ -59,6 +59,15 @@ The primary objective of this project is to deploy a scalable, highly available,
 2. **Create Golden AMIs**:
    - **For Nginx**:
      - Install [Nginx](https://www.nginx.com/).
+      - **STEPS**
+      
+        ```bash
+        sudo apt-get update -y && sudo apt-get upgrade -y
+        curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+        unzip awscliv2.zip
+        sudo ./aws/install
+        aws --version
+        ```
      - Configure custom memory metrics for CloudWatch.
    - **For Apache Tomcat**:
      - Install [Apache Tomcat](http://tomcat.apache.org/).
