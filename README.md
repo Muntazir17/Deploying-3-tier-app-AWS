@@ -15,8 +15,6 @@
 9. [Validation](https://github.com/NotHarshhaa/DevOps-Projects/blob/master/DevOps-Project-01/README.md#validation)
 
 ---
-
-![3-tier application](https://imgur.com/3XF0tlJ.png)
 ---
 
 # Project Overview
