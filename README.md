@@ -1,6 +1,6 @@
 # Deploy Java Application on AWS 3-Tier Architecture
 
-![AWS](https://imgur.com/b9iHwVc.png)
+![AWS]([https://imgur.com/b9iHwVc.png](https://imgur.com/3XF0tlJ.png))
 
 ### TABLE OF CONTENTS
 
