@@ -34,35 +34,14 @@ The primary objective of this project is to deploy a scalable, highly available,
 
 1. **Create Global AMI (Amazon Machine Image)**:
    - Install [AWS CLI](https://aws.amazon.com/cli/):
-      - **STEPS**
-      
-        ```bash
-        sudo apt-get update -y && sudo apt-get upgrade -y
-        curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-        sudo apt-get install unzip -y
-        unzip awscliv2.zip
-        sudo ./aws/install
-        aws --version
-        ```
 
    - Install [CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html):
-      - **STEPS**
-
-        ```bash
-        wget https://amazoncloudwatch-agent.s3.amazonaws.com/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb
-        sudo dpkg -i -E ./amazon-cloudwatch-agent.deb
-        ```
 
    - Install [AWS Systems Manager (SSM) Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html).
 
 2. **Create Golden AMIs**:
    - **For Nginx**:
      - Install [Nginx](https://www.nginx.com/).
-      - **STEPS**
-      
-        ```bash
-   
-        ```
      - Configure custom memory metrics for CloudWatch.
    - **For Apache Tomcat**:
      - Install [Apache Tomcat](http://tomcat.apache.org/).
@@ -138,8 +117,3 @@ Deploy AWS infrastructure resources as per the architecture diagram.
 1. Ensure administrators can log into EC2 instances via the session manager and Bastion Host.
 2. Verify that end-users can access the application from a public internet browser.
 
-## Final Note
-
-If you find this repository useful for learning, please give it a star on GitHub. Thank you!
-
-### Authored by [Muntazir](https://github.com/Muntazir17)
